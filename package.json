@@ -4,8 +4,9 @@
   "description": "number formatter module",
   "main": "index.js",
   "scripts": {
-    "test": "mocha --reporter spec"
-  },
+  "test": "node_modules/.bin/mocha --reporter spec",
+  "cover": "node_modules/istanbul/lib/cli.js cover node_modules/mocha/bin/_mocha -- -R spec test/*"
+},
   "author": "Yogendra Sharma <eh.yogendra@gmail.com>",
   "license": "ISC",
   "repository": {
@@ -21,6 +22,8 @@
   "homepage": "https://github.com/yogendra0sharma/formatter_node_module#readme",
   "devDependencies": {
     "chai": "^4.1.2",
+    "coveralls": "^3.0.0",
+    "istanbul": "^0.4.5",
     "mocha": "^5.0.1"
   }
 }
